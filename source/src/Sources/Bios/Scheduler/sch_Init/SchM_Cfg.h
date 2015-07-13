@@ -3,7 +3,7 @@
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*
-* C Include:        Scheduler Start.h
+* C Include:        SchM_Cfg.h
 * Instance:         RPL_1
 * %version:         1 
 * %created_by:      Diego Flores
@@ -23,15 +23,17 @@
 /* Integration under Continuus CM                                             */
 /*============================================================================*/
 
-#ifndef _START_H                               /* To avoid double inclusion */
-#define _START_H
+#ifndef _SCHMCFG_H                               /* To avoid double inclusion */
+#define _SCHMCFG_H
 
 /* Includes */
 /* -------- */
-#include "typedefs.h"
+#include "SchM.h"
+
 
 /* Exported types and constants */
 /* ---------------------------- */
+extern const SchConfigType SchConfig;
 
 /* Types definition */
 /* typedef */
@@ -70,7 +72,6 @@
 /* ---------------------------------------- */
 
 /* Functions prototypes */
-extern void SchM_Start(void);
 
 /* Functions macros */
 

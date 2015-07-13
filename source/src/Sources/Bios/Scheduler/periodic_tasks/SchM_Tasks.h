@@ -23,12 +23,11 @@
 /* Integration under Continuus CM                                             */
 /*============================================================================*/
 
-#ifndef _TASKCALLBACK_H                               /* To avoid double inclusion */
-#define _TASKCALLBACK_H
+#ifndef _SCHMTASK_H                               /* To avoid double inclusion */
+#define _SCHMTASK_H
 
 /* Includes */
 /* -------- */
-#include "typedefs.h"
 
 
 /* Exported types and constants */

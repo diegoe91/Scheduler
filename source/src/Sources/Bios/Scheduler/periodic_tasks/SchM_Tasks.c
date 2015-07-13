@@ -3,13 +3,13 @@
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*
-* C Source:         Scheduler task callback functions.c
+* C Source:         SchM_Tasks.c
 * Instance:         RPL_1
 * %version:         1
 * %created_by:      Diego Flores
 * %date_created:    Mon Jul  13 10:20:00 2015 		
 *=============================================================================*/
-/* DESCRIPTION : Scheduler task callback functions                            */
+/* DESCRIPTION : SchM_Tasks                        */
 /*============================================================================*/
 /* FUNCTION COMMENT : This file describes the C source template according to  */
 /* the new software platform                                                  */
@@ -25,8 +25,7 @@
 
 /* Includes */
 /* -------- */
-#include "typedefs.h"
-#include "Scheduler task callback functions.h"
+#include "SchM_Tasks.h"
 
 /* Functions macros, constants, types and datas         */
 /* ---------------------------------------------------- */

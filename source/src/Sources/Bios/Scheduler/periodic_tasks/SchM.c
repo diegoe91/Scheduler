@@ -3,13 +3,13 @@
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*
-* C Source:         Background task.c
+* C Source:         SchM.c
 * Instance:         RPL_1
 * %version:         1
 * %created_by:      Diego Flores
 * %date_created:    Mon Jul  13 10:20:00 2015 		
 *=============================================================================*/
-/* DESCRIPTION : Background task                                              */
+/* DESCRIPTION : SchM                                                         */
 /*============================================================================*/
 /* FUNCTION COMMENT : This file describes the C source template according to  */
 /* the new software platform                                                  */
@@ -25,8 +25,7 @@
 
 /* Includes */
 /* -------- */
-#include "typedefs.h"
-#include "Background task.h"
+#include "SchM.h"
 
 /* Functions macros, constants, types and datas         */
 /* ---------------------------------------------------- */
@@ -104,7 +103,63 @@
  *  Critical/explanation :    [yes / No]
  **************************************************************/
 
-void SchM_Background(void)
+void SchM_Init(SchConfigType *SchM_Config)
+{
+	/*inicializar todo en suspended task control estado y la funcion a donde tiene que ir*/
+}
+
+/**************************************************************
+ *  Name                 :	export_func
+ *  Description          :
+ *  Parameters           :  [Input, Output, Input / output]
+ *  Return               :
+ *  Critical/explanation :    [yes / No]
+ **************************************************************/
+
+void SchM_Stop(void)
 {
 	
+}
+
+/**************************************************************
+ *  Name                 :	export_func
+ *  Description          :
+ *  Parameters           :  [Input, Output, Input / output]
+ *  Return               :
+ *  Critical/explanation :    [yes / No]
+ **************************************************************/
+
+void SchM_Start(void)
+{
+	/*arrancar el timer pit*/
+}
+
+/**************************************************************
+ *  Name                 :	export_func
+ *  Description          :
+ *  Parameters           :  [Input, Output, Input / output]
+ *  Return               :
+ *  Critical/explanation :    [yes / No]
+ **************************************************************/
+
+void SchM_OsTick(void)
+{
+	
+}
+
+
+/**************************************************************
+ *  Name                 :	export_func
+ *  Description          :
+ *  Parameters           :  [Input, Output, Input / output]
+ *  Return               :
+ *  Critical/explanation :    [yes / No]
+ **************************************************************/
+
+void SchM_Background(void)
+{   
+    /*checar el estado de las tareas a raves del task control type*/
+	for (;;) 
+	{   
+	}
 }

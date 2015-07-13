@@ -5,7 +5,7 @@
 /** GPIO funtion prototypes  */
 #include    "GPIO.h"
 #include    "PIT.h"
-#include    "dummy.h"
+#include    "SchM.h"
 
 /*****************************************************************************************************
 * Definition of module wide VARIABLEs 
@@ -67,17 +67,24 @@ int main(void)
 	EXCEP_InitExceptionHandlers();
 	
 	PIT_device_init();
-    PIT_channel_configure(PIT_CHANNEL_0 , Test);	
+    PIT_channel_configure(PIT_CHANNEL_0 ,   SchM_OsTick);	
     PIT_channel_start(PIT_CHANNEL_0);
     
     /* Enable External Interrupts*/
     enableIrq();
+    
+    SchM_Init():
+    
+    SchM_Start();
+    
+    SchM_Background();
+	
 	/* Infinite loop */
 	for (;;) 
 	{
 
 
-        BackgroundSubsystemTasks();
+        
 	}
 }
 

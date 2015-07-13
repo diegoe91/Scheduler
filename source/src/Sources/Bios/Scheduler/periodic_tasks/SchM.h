@@ -3,7 +3,7 @@
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*
-* C Include:        Background task.h
+* C Include:        SchM.h
 * Instance:         RPL_1
 * %version:         1 
 * %created_by:      Diego Flores
@@ -23,12 +23,12 @@
 /* Integration under Continuus CM                                             */
 /*============================================================================*/
 
-#ifndef _BACKGROUND_H                               /* To avoid double inclusion */
-#define _BACKGROUND_H
+#ifndef _SCHM_H                               /* To avoid double inclusion */
+#define _SCHM_H
 
 /* Includes */
 /* -------- */
-#include "typedefs.h"
+#include "SchM_Types.h"
 
 
 /* Exported types and constants */
@@ -71,6 +71,10 @@
 /* ---------------------------------------- */
 
 /* Functions prototypes */
+extern void SchM_Init(SchConfigType *SchM_Config);
+extern void SchM_Stop(void);
+extern void SchM_Start(void);
+extern void SchM_OsTick(void);
 extern void SchM_Background(void);
 
 /* Functions macros */

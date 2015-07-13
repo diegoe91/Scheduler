@@ -3,13 +3,13 @@
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*
-* C Source:         Scheduler Start.c
+* C Source:         SchM_Cfg.c
 * Instance:         RPL_1
 * %version:         1
 * %created_by:      Diego Flores
 * %date_created:    Mon Jul  13 10:20:00 2015 		
 *=============================================================================*/
-/* DESCRIPTION : Scheduler Start                                              */
+/* DESCRIPTION : SchM_Cfg                                                     */
 /*============================================================================*/
 /* FUNCTION COMMENT : This file describes the C source template according to  */
 /* the new software platform                                                  */
@@ -25,11 +25,28 @@
 
 /* Includes */
 /* -------- */
-#include "typedefs.h"
-#include "Scheduler Start.h"
+#include "SchM_Cfg.h"
+#include "SchM_Tasks.h"
 
 /* Functions macros, constants, types and datas         */
 /* ---------------------------------------------------- */
+const SchTaskDescriptorType SchTaskDescConfig [] =
+{
+ /*offset, Mask,         Task ID,    Function Pointer */ 
+	{ 0, MASK_3P125MS, TASK_3P125MS, (void*)0  },
+	{ 1, MASK_6P25MS,  TASK_6P25MS,  (void*)0  },
+	{ 2, MASK_12P5MS,  TASK_12P5MS,  (void*)0  },
+	{ 3, MASK_25MS,    TASK_25MS,    (void*)0  },
+	{ 5, MASK_50MS,    TASK_50MS,    (void*)0  },
+	{ 6, MASK_100MS,   TASK_100MS,   (void*)0  }    	
+};
+
+const SchConfigType SchConfig =
+{
+	(sizeof(SchTaskDescConfig)/sizeof(SchTaskDescConfig[0])),
+	SchTaskDescConfig	
+};
+
 /* Functions macros */
 
 /*==================================================*/ 
@@ -103,8 +120,3 @@
  *  Return               :
  *  Critical/explanation :    [yes / No]
  **************************************************************/
-
-void SchM_Start(void)
-{
-	
-}
