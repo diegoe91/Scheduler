@@ -98,10 +98,11 @@
 /* ------------------ */
 /**************************************************************
  *  Name                 :	SchM_Task_1p563ms
- *  Description          :
- *  Parameters           :  [Input, Output, Input / output]
- *  Return               :
- *  Critical/explanation :    [yes / No]
+ *  Description          :  Container for functionality that is 
+                            executed periodically.
+ *  Parameters           :  none
+ *  Return               :  none
+ *  Critical/explanation :  no
  **************************************************************/
 
 void SchM_Task_1p563ms(void)
@@ -111,10 +112,11 @@ void SchM_Task_1p563ms(void)
 
 /**************************************************************
  *  Name                 :	SchM_Task_3p125ms
- *  Description          :
- *  Parameters           :  [Input, Output, Input / output]
- *  Return               :
- *  Critical/explanation :    [yes / No]
+ *  Description          :  Container for functionality that is 
+                            executed periodically.
+ *  Parameters           :  none
+ *  Return               :  none
+ *  Critical/explanation :  no
  **************************************************************/
 
 void SchM_Task_3p125ms(void)
@@ -124,10 +126,11 @@ void SchM_Task_3p125ms(void)
 
 /**************************************************************
  *  Name                 :	SchM_Task_6p25ms
- *  Description          :
- *  Parameters           :  [Input, Output, Input / output]
- *  Return               :
- *  Critical/explanation :    [yes / No]
+ *  Description          :  Container for functionality that is 
+                            executed periodically.
+ *  Parameters           :  none
+ *  Return               :  none
+ *  Critical/explanation :  no
  **************************************************************/
 
 void SchM_Task_6p25ms(void)
